@@ -1,7 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hey, my name is Kasia and this is my first project on GitHub. Let's see what's inside....
 
 Things you may want to cover:
 
