@@ -21,7 +21,7 @@ p {
   text-align: justify;
 }
 
-img {
+.product-img {
   width: 60%;
   margin: 0 20%;
 }
@@ -34,6 +34,8 @@ footer {
   margin: 2% 2%;
 
 }
+
+/// CAROUSEL ///
 
 .carousel-caption {
   color: #243037;
@@ -54,4 +56,37 @@ footer {
 
 .carousel-indicators li.active {
   background-color: grey;
+}
+
+/// ORDERS ///
+
+.order-img {
+  width: 40%;
+}
+
+.order-price {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: right;
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+
+
+}
+
+.order-content {
+  width:70%;
+}
+
+.order-content h3 {
+  padding-bottom: 1%;
+}
+
+.order-description {
+  padding-bottom: 5%;
+}
+
+.order-description p {
+  font-size: 1.1em;
 }
