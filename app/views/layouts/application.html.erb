@@ -26,31 +26,30 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="/simple_pages/about">About us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="/simple_pages/contact">Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Buy a bike
+            <a class="nav-link dropdown-toggle" href="/products" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">All bikes</a>
-              <a class="dropdown-item" href="#">For Ladies</a>
-              <a class="dropdown-item" href="#">For Gents</a>
+              <a class="dropdown-item" href="/products">All bikes</a>
+              <a class="dropdown-item" href="/products">For Ladies</a>
+              <a class="dropdown-item" href="/products">For Gents</a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
-
+    
     <%= yield %>
-    <footer>
-      &copy; 2018 Retro Bikes <i class="fas fa-bicycle"></i> Berlin
-    </footer>
+    <%= render 'simple_pages/footer' %>
+
   </body>
 </html>

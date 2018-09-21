@@ -1,0 +1,56 @@
+<footer id="footer-content">
+  <div class="container-fluid">
+    <div class="row">
+
+ <!-- COLUMN 1 -->
+      <div class="col-lg-3 col-md-3 col-sm-12">
+        <p class="footer-title"> Payment options </p>
+        <div class="payment-options">
+            <%= image_tag 'visa.svg', class: "img-fluid", id: "payment-1", alt: 'payment visa' %>
+            <%= image_tag 'mastercard.svg', class: "img-fluid", id: "payment-2", alt: 'payment mastercard' %>
+            <%= image_tag 'paypal.svg', class: "img-fluid", id: "payment-3", alt: 'payment paypal' %>
+        </div><!-- end payment -->
+      </div>
+
+<!-- COLUMN 2 -->
+      <div class="col-lg-3 col-md-3 col-sm-12 footer-menu">
+        <ul class="nav flex-column">
+          <p class="footer-title"> About us </p>
+          <li><%= link_to "Our Story", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "Shops", root_path, :class => "footer-nav nav-item nav-link" %></li>
+          <li><%= link_to "FAQ", root_path, :class => "footer-nav nav-item nav-link" %></li>
+        </ul>
+      </div>
+
+<!-- COLUMN 3 -->
+            <div class="col-lg-3 col-md-3 col-sm-12 footer-menu">
+              <ul class="nav flex-column">
+                <p class="footer-title"> Terms &amp; Conditions </p>
+                <li><%= link_to "Shipping & return", root_path, :class => "footer-nav nav-item nav-link" %></li>
+                <li><%= link_to "General terms", root_path, :class => "footer-nav nav-item nav-link" %></li>
+                <li><%= link_to "Data tracking", root_path, :class => "footer-nav nav-item nav-link" %></li>
+              </ul>
+            </div>
+
+
+<!-- COLUMN 4 -->
+            <div class="col-lg-3 col-md-3 col-sm-12 footer-menu">
+              <p class="footer-title"> Follow us </p>
+              <div class="socialmedia">
+                  <%= image_tag 'fb.svg', class: "img-fluid", id: "socialmedia-1", alt: 'social media' %>
+                  <%= image_tag 'instagram.svg', class: "img-fluid", id: "socialmedia-2", alt: 'social media' %>
+                  <%= image_tag 'mail.svg', class: "img-fluid", id: "socialmedia-3", alt: 'social media' %>
+              </div><!-- end social media -->
+            </div>
+
+          </div><!-- /row -->
+        </div><!-- /container-fluid-->
+        <!-- End Contact Grid -->
+
+        <!-- Copyright -->
+        <div id="copyright">
+          &copy; 2018 Retro Bikes <i class="fas fa-bicycle"></i> Berlin
+        </div>
+        <!-- End copyright -->
+
+</footer>
