@@ -37,6 +37,13 @@
         </li>
         </ul>
       </div>
+      <div class="form-inline">
+        <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+        <%= form.text_field :q, id: 'q', value: params[:q], class: "form-control mr-sm-2", placeholder: "Search for...", "aria-label": "Search" %>
+        <%= form.submit 'Search', class: "btn btn-sm btn-outline-success my-2 my-sm-0" %>
+        <% end %>
+      </div>
+
     </nav>
 
     <%= yield %>
