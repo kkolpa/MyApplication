@@ -235,12 +235,20 @@ p {
   padding-bottom: 4%;
 }
 
-#contact_image {
-  padding-bottom: 6%;
-  width: 80%;
-  margin: 2% 10%;
+#container-contact p {
+  width: 70%;
+  margin: 3% 15%;
 }
 
+#contact_image {
+  width: 100%;
+  margin: 5% 0%;
+}
+
+.form-group-contact {
+  width: 70%;
+  margin: 0 15%;
+}
 
 /// NEW PRODUCT ///
 
@@ -272,4 +280,24 @@ p {
 .form-group {
   width: 60%;
   margin: 0 25%;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+/// THANK YOU PAGE ///
+
+#header-thank-you {
+  padding: 2% 0;
+}
+
+#message-thank-you {
+  text-align: center;
+  width: 80%,auto;
+  margin: 0 10%;
+}
+
+#back-button {
+  margin: 3% 43%;
 }

@@ -1,13 +1,36 @@
 <header id="header-contact">
-  <h2>Contact</h2><br><br>
+  <h2>Contact</h2>
 </header>
+
 <div class="container" id="container-contact">
+  <p>Pabst venmo echo park, kombucha master cleanse occupy veniam artisan. Commodo brunch retro, meditation aliquip proident in four dollar toast. Cliche qui cupidatat venmo ut velit. Messenger bag glossier raw denim kickstarter bushwick neutra nisi labore hell of fam pariatur fingerstache tumblr eu etsy.</p>
+
   <div class="row" id="contact">
-    <div class="col-xs-12 col-md-6">
-      <h5>Write us an email: bikes-berlin@gmail.com</h5>
-      <p>Lorem ipsum dolor amet cliche retro forage man braid post-ironic aliqua butcher chillwave ut farm-to-table hexagon. Pabst venmo echo park, kombucha master cleanse occupy veniam artisan. Commodo brunch retro, meditation aliquip proident in four dollar toast. Cliche qui cupidatat venmo ut velit. Messenger bag glossier raw denim kickstarter bushwick neutra nisi labore hell of fam pariatur fingerstache tumblr eu etsy.</p>
+    <div class="col-xs-12 col-md-7">
+      <h3> Ask us anything:</h3>
+    <%= flash[:notice] %>
+
+    <%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+    <div class="row">
+      <div class="field form-group-contact">
+        <%= form.label :name, class: "control-label" %>
+        <%= form.text_field :name, class: "form-control", placeholder: "Enter Name" %>
+      </div>
+      <div class="field form-group-contact">
+        <%= form.label :email, class: "control-label" %>
+        <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+      </div>
+      <div class="field form-group-contact">
+        <%= form.label :message, class: "control-label" %>
+        <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+      </div>
+    <div class="actions form-group-contact">
+    <%= form.submit "Send", class: "btn btn-outline-success my-2 my-sm-0" %>
+  </div>
+</div>
+    <% end %>
     </div>
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-5">
       <%= image_tag 'contact_image.jpg', class: "img-fluid", id: "contact_image", alt: 'bike' %>
     </div>
   </div>
