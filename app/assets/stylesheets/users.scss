@@ -1,0 +1,40 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+/// SIGN UP ///
+
+#header-singup h2 {
+  padding: 2% 0;
+}
+
+.form-group-sign-up {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/// LOG IN ///
+#header-login h2 {
+  padding: 2% 0;
+}
+
+.form-group-log-in {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+/// NEW PASSWORD ///
+
+#header-newpassword h2 {
+  padding: 2% 0;
+}
+
+.form-group-new-password {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  }

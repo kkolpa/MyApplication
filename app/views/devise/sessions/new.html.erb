@@ -1,0 +1,29 @@
+<header id="header-login">
+  <h2>Log in</h2>
+</header>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+
+  <div class="field form-group-log-in">
+    <%= f.label :email, class: "control-label" %>
+    <%= f.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field form-group-log-in">
+    <%= f.label :password, class: "control-label" %>
+    <%= f.password_field :password, class: "form-control", placeholder: "Enter password", autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field form-group-log-in form-inline">
+      <%= f.check_box :remember_me %>&emsp;
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions form-group-log-in">
+    <%= f.submit "Log in", class: "btn btn-outline-success my-2 my-sm-0" %>
+    <br><br>
+    <%= render "devise/shared/links" %>
+  </div>
+<% end %>
