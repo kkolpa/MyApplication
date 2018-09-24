@@ -1,13 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<h2>All products</h2><br><br>
-    <div class="container-fluid" id="product-list">
-      <div class="row">
-        <%=render @products %>
-      </div>
-    </div>
+<header id="header-products">
+  <h2>All products</h2>
+</header>
+<div class="container-fluid" id="product-list">
+  <div class="row">
+    <%=render @products %>
+  </div>
+</div>
 
 <br>
 <div class="new-product">
-<%= link_to 'New Product', new_product_path %>
+  <%= link_to 'New Product', new_product_path %>
 </div>
