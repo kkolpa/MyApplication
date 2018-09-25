@@ -22,16 +22,19 @@
         </p>
 
         <br>
-        <p class="product-show-price">
+
+        <p class="product-show-price"><strong>Price:</strong>
           <strong><%= @product.price %> €</strong>
         </p>
+
         <br>
-        <p class="product-show-reviews">
-          <strong>Reviews:</strong>
-          <%= @product.highest_rating_comment %>
+
+        <p><strong>Average rating:</strong>
+          <div class="rated product-average-rating" data-score="<%= @product.average_rating %>">
+          </div>
         </p>
-
-
     </div>
   </div>
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
 </div>
