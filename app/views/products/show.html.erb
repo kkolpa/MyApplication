@@ -1,27 +1,37 @@
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="container-fluid product-show">
+  <div class="row">
+    <div class="col-sm-8 col-md-6">
+        <%= image_tag(@product.image_url, class: "img-fluid") if @product.image_url%>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Back', products_path %>
+    </div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+    <div class="col-sm-4 col-md-6">
 
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
+        <h3 class="product-show-name">
+          <%= @product.name %>
+        </h3>
 
-<p>
-  <strong>Colour:</strong>
-  <%= @product.colour %>
-</p>
+        <p class="product-show-description">
+          <%= @product.description %>
+        </p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+        <p class="product-show-color">
+          <strong>Colour:</strong>
+          <%= @product.colour %>
+        </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+        <br>
+        <p class="product-show-price">
+          <strong><%= @product.price %> €</strong>
+        </p>
+        <br>
+        <p class="product-show-reviews">
+          <strong>Reviews:</strong>
+          <%= @product.highest_rating_comment %>
+        </p>
+
+
+    </div>
+  </div>
+</div>
