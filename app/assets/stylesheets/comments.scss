@@ -1,3 +1,26 @@
 // Place all the styles related to the comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#comment_body {
+  width: 40%;
+}
+
+
+#comment_rating {
+  width: 40%;
+}
+
+.header-new-comment {
+  margin-left: 10%;
+  padding-top: 5%;
+}
+
+.product-average-rating {
+  margin-left: 10%;
+}
+
+.rating, .rated {
+  margin-left: 10%;
+}
