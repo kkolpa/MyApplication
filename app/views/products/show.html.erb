@@ -37,4 +37,8 @@
   </div>
   <%= render 'new_comment' %>
   <%= render 'comments' %>
+
+  <%= will_paginate @comments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
+
+
 </div>
