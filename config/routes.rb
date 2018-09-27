@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: { registrations: "user_registrations" }
   resources :users
 
   get 'simple_pages/about'
@@ -13,5 +13,5 @@ Rails.application.routes.draw do
   resources :products do
     resources :comments
   end
-  
+
 end
