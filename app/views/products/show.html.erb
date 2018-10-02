@@ -34,8 +34,11 @@
 
 
         <%= form_with(url: '/payments/create') do |form| %>
-        <%= render partial: "devise/shared/stripe_checkout_button" %>
+         <%= hidden_field_tag(:product_id, @product.id) %>
+         <%= render partial: "devise/shared/stripe_checkout_button" %>
+
         <% end %>
+
     </div>
   </div>
   <%= render 'new_comment' %>
