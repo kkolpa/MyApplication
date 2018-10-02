@@ -1,6 +1,6 @@
   <div class="col-sm-4">
     <%= image_tag(product.image_url, class: "img-fluid product-img") %> <br> <br>
-    <a href="#"><h3><%= product.name %></h3></a> <br>
+    <h3><%= link_to product.name, product %></h3> <br>
     <p><%= product.description %></p>
     <p>Color: <%= product.colour %></p>
       <div class="rated product-average-rating" data-score="<%= product.average_rating %>"></div>
