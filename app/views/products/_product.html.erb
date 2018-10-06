@@ -1,3 +1,4 @@
+<% cache product do %>
   <div class="col-sm-4">
     <%= image_tag(product.image_url, class: "img-fluid product-img") %> <br> <br>
     <h3><%= link_to product.name, product %></h3> <br>
@@ -12,3 +13,4 @@
     <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> <br><br>
     </p>
   </div><!-- /col -->
+<% end %>

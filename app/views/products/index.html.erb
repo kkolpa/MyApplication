@@ -3,7 +3,9 @@
 </header>
 <div class="container-fluid" id="product-list">
   <div class="row">
+  <% cache(cache_key_for_products) do %>
     <%=render @products %>
+  <% end %>
   </div>
 </div>
 
