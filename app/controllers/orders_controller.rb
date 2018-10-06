@@ -1,7 +1,10 @@
 class OrdersController < ApplicationController
+  before_action :authenticate_user!
   def index
-    @orders = Order.includes(:product).all
+    @orders = Order.includes(:product, :user).where(user_id: current_user.id).all
+    byebug
   end
+
 
   def show
     @order = Order.find(params[:id])
@@ -13,6 +16,6 @@ class OrdersController < ApplicationController
   def destroy
   end
 
-before_action :authenticate_user!
+
 
 end
