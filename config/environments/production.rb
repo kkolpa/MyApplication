@@ -103,4 +103,7 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { host: 'retro-bikes.herokuapp.com' }
 
+  config.web_socket_server_url = "wss://retro-bikes.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://retro-bikes.herokuapp.com', 'http://retro-bikes.herokuapp.com']
+
 end

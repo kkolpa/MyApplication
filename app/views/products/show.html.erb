@@ -9,7 +9,7 @@
     <div class="col-sm-4 col-md-6">
 
       <% cache @product do %>
-      
+
         <h3 class="product-show-name">
           <%= @product.name %>
         </h3>
@@ -41,11 +41,15 @@
 
         <% end %>
 
+
     </div>
   </div>
+<% end %>
+
+<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
   <%= render 'new_comment' %>
   <%= render 'comments' %>
-  <% end %>
+
 
   <%= will_paginate @comments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
 
