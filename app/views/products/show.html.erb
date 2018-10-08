@@ -46,12 +46,9 @@
   </div>
 <% end %>
 
-<div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-  <%= render 'new_comment' %>
+
+  <%= render 'new_comment'%>
+  <div class="badge badge-warning" style="display:none" role="alert">A new comment was posted!</div>
   <%= render 'comments' %>
-
-
   <%= will_paginate @comments, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %>
-
-
 </div>
