@@ -1,0 +1,16 @@
+<div class="container-purchase">
+  <h2>Thank you for your purchase</h2>
+  <h3>Your retro bike is on the way to you!</h3>
+<br>
+  <p> In the meantime take a look at our other products or check your order's details: <br><br>
+<br>
+  <%= link_to products_path, class: 'btn btn-outline-success purchase-button' do %>
+       Do some more shopping
+    <% end %>
+
+    <%= link_to orders_path, class: 'btn btn-outline-success purchase-button' do %>
+         Show my orders
+      <% end %>
+</p>
+
+</div>
