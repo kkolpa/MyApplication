@@ -1,5 +1,8 @@
 <div class="container order-content">
    <h2>My orders</h2> <br><br>
+
+   <% if @orders.present? %>
+
    <div class="row">
      <div class="col-sm">
        <% @orders.each do |order| %>
@@ -22,6 +25,12 @@
 
 
     <% end %>
+  <% end %>
     </div>
   </div>
-</div>
+
+  <% else %>
+  <h3> So empty here... <br>You haven't ordered anything yet!<br><br>
+  <%= link_to :back, class: "btn btn-outline-success empty-button" do %> Back <% end %>
+
+</h3></div>

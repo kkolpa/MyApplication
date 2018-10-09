@@ -32,7 +32,7 @@
           <li class="nav-item nav-link dropdown dropdown-toggle"><%= link_to "Products", products_path, { :id=>"navbarDropdownMenuLink", :role=>"button", "data-toggle"=>"dropdown", "aria-haspopup"=>"true", "aria-expanded"=>"false"} %>
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <%= link_to "All bikes", products_path, { :class=>"dropdown-item"} %>
-            <%= link_to "For ladies", products_path, { :class=>"dropdown-item"} %>
+            <%= link_to "For Ladies", products_path, { :class=>"dropdown-item"} %>
             <%= link_to "For Gents", products_path, { :class=>"dropdown-item"} %>
           </div>
         </li>
@@ -55,6 +55,7 @@
         </li>
         <% end %>
         </li>
+        <strong><li class="nav-item nav-link"><%= link_to "My orders", orders_path %></li></strong>
       </ul>
     </div>
   </nav>
