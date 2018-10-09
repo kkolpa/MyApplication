@@ -14,4 +14,14 @@ class UserMailer < ApplicationMailer
     mail(to: user.email,
     subject: "Welcome to #{@appname}!")
   end
+
+  def order_confirmation_email(user, product)
+  		@product = product
+  		@user = user
+  		mail( from: "donotreply@retro-bikes.herokuapp.com",
+  			  to: @user.email,
+  			  subject: "Confirmation of your purchase at Retro Bikes")
+  	end
+
+
 end
