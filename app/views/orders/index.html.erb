@@ -1,11 +1,11 @@
 <div class="container order-content">
    <h2>My orders</h2> <br><br>
 
-   <% if @orders.present? %>
-
+ <% if @orders.present? %>
+  <% @orders.each do |order| %>
    <div class="row">
      <div class="col-sm">
-       <% @orders.each do |order| %>
+
         <h3>
           Order #<%= order.id %>:<br><br>
           <%= link_to order.product.name, order %>
@@ -22,15 +22,14 @@
         <strong>Price: $ <%= order.product.price %></strong>
       </div>
     </div>
-
-
     <% end %>
-  <% end %>
+
     </div>
   </div>
 
-  <% else %>
+<% else %>
   <h3> So empty here... <br>You haven't ordered anything yet!<br><br>
   <%= link_to :back, class: "btn btn-outline-success empty-button" do %> Back <% end %>
-
-</h3></div>
+</h3>
+<% end %>
+</div>
