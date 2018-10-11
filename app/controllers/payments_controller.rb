@@ -1,6 +1,6 @@
 class PaymentsController < ApplicationController
   before_action :authenticate_user!
-  protect_from_forgery with: :reset_session
+  skip_before_action :verify_authenticity_token
 
   def create
     token = params[:stripeToken]
