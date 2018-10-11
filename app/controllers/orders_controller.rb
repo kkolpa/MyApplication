@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   before_action :authenticate_user!
-  protect_from_forgery with: :reset_session 
+ 
 
   def index
     if current_user.admin?
